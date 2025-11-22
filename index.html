@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghibli Gallery</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="hero-section position-relative">
+      <img
+        src="assets/images/hero-picture.jpg"
+        alt="Hero Picture"
+        class="hero-picture"
+      />
+
+      <div
+        class="content text-center position-absolute text-light d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="h1 fw-bold display-3">Ghibli Movies</div>
+
+        <p class="fw-light mb-5">
+          Explore the magical worlds of Studio Ghibli and immerse yourself in
+          the visionary creations of Hayao Miyazaki and his talented team. From
+          enchanting creatures to breathtaking landscapes, these exceptional
+          films capture the imagination and touch the heart. Below you'll find
+          my four personal favorites and a complete gallery of all Ghibli films
+          sorted alphabetically.
+        </p>
+
+        <a href="#Movies" class="btn btn-light btn-md rounded-5 px-3 my-3">
+          See Movies
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="h2 fw-bold my-5 text-center">Top Favorites</div>
+            <div class="col-12 col-md-6 col-lg-3 my-3">
+                <div class="card shadow">
+                  <img src="assets/images/pic-1.jpg" class="card-img-top w-100" />
+                  <div class="card-body">
+                    <h5 class="card-title">Whisper of the Heart</h5>
+                    <p class="card-year">1995</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 my-3">
+                <div class="card shadow">
+                  <img src="assets/images/pic-2.jpg" class="card-img-top w-100" />
+                  <div class="card-body">
+                    <h5 class="card-title">Spirited Away</h5>
+                    <p class="card-year">2001</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 my-3">
+                <div class="card shadow">
+                  <img src="assets/images/pic-3.jpg" class="card-img-top w-100" />
+                  <div class="card-body">
+                    <h5 class="card-title">The Wind Rises</h5>
+                    <p class="card-year">2013</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 my-3">
+                <div class="card shadow">
+                  <img src="assets/images/pic-4.jpg" class="card-img-top w-100" />
+                  <div class="card-body">
+                    <h5 class="card-title">Howl's Moving Castle</h5>
+                    <p class="card-year">2004</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="Movies">
+      <div class="row" id="container-row">
+        <!-- Cards will be injected here by JavaScript -->
+      </div>
+
+    <!-- <div class="col-12 col-md-6 col-lg-3 my-3">
+      <div class="card">
+        <img src="" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div> -->
+
+    <script src="data.js"></script>
+
+    <!-- <script>
+      var containerflow = document.getElementById("container-row");
+
+      for (var i = 0; i < data.length; i++) {
+        containerflow.innerHTML += `
+          <div class="col-12 col-md-6 col-lg-3 my-3">
+            <div class="card">
+              <img src="${data[i].picture}" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">${data[i].movieTitle}</h5>
+                <p class="card-text">${data[i].year}</p>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
