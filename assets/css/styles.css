@@ -7,7 +7,6 @@ body {
 }
 
 .hero-section {
-  position: relative;
   height: 80vh;
   width: 100%;
   overflow: hidden;
@@ -64,6 +63,7 @@ body {
   background-color: #000000;
   color: white;
   border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
