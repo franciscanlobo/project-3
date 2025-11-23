@@ -2,27 +2,72 @@ body {
   font-family: "Poppins";
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: #000000;
+  color: white;
 }
 
 .hero-section {
   position: relative;
-  height: 60vh;
+  height: 80vh;
   width: 100%;
   overflow: hidden;
 }
 
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.315) 50%,
+    rgb(0, 0, 0) 100%
+  );
+}
+
 .hero-picture {
-  height: auto;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
+  filter: brightness(60%);
 }
 
 .content {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -65%);
   width: 100%;
   max-width: 1000px;
+  position: absolute;
+}
+
+.movies-btn {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.movies-btn:hover {
+  background-color: #f3c632;
+  color: black;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+.card {
+  background-color: #000000;
+  color: white;
+  border: none;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
