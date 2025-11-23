@@ -1,115 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghibli Gallery</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ghibli Gallery</title>
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <body>
+    <div class="hero-section position-relative">
+      <img
+        src="assets/images/hero-picture.jpg"
+        alt="Hero Picture"
+        class="hero-picture"
+      />
 
-</head>
+      <div
+        class="content position-absolute text-light d-flex flex-column align-items-start justify-content-center"
+      >
+        <h1 class="fw-bold display-1 mb-4">Studio Ghibli Movies</h1>
 
-<body>
-  <div class="hero-section position-relative">
-    <img src="assets/images/hero-picture.jpg" alt="Hero Picture" class="hero-picture" />
+        <p class="mb-4 fs-5">
+          A curated collection of Studio Ghibli’s most magical worlds, from
+          heartfelt adventures to timeless stories that shaped generations.
+        </p>
 
-    <div class="content position-absolute text-light d-flex flex-column align-items-start justify-content-center">
-      <h1 class="fw-bold display-1 mb-4">Studio Ghibli Movies</h1>
-
-      <p class="mb-4 fs-5">
-        A curated collection of Studio Ghibli’s most magical worlds, from heartfelt adventures 
-        to timeless stories that shaped generations.
-      </p>
-
-      <a href="#Movies" class="movies-btn px-5 py-2 mt-2">
-        See Movies
-      </a>
+        <a href="#Movies" class="movies-btn px-5 py-2 mt-2"> See Movies </a>
+      </div>
     </div>
-  </div>
-</body>
 
+    <div class="about py-5">
+      <div class="container">
+        <h2 class="fw-bold mb-5 text-center display-4">About Studio Ghibli</h2>
 
-  <div class="about py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-md-8">
+            <p class="mb-0">
+              <b>Studio Ghibli</b>, founded in 1985 by Hayao Miyazaki and Isao
+              Takahata, is a celebrated Japanese animation studio known for its
+              heartfelt stories and stunning hand-drawn worlds. With films like
+              <i>My Neighbor Totoro</i>, <i>Spirited Away</i>, and
+              <i>Princess Mononoke</i>, the studio has become beloved worldwide
+              for its imaginative settings, memorable characters, and emotional
+              depth—cementing its legacy as a cornerstone of animated cinema.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4 text-center">
+            <img
+              src="assets/images/about-gif.gif"
+              alt="About Studio Ghibli"
+              class="img-fluid rounded shadow"
+              style="max-height: 260px; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
-      <h2 class="fw-bold mb-5 text-center display-4">About Studio Ghibli</h2>
-  
-      <div class="row align-items-center g-4">
-        <div class="col-12 col-md-8">
-          <p class="mb-0">
-            <b>Studio Ghibli</b>, founded in 1985 by Hayao Miyazaki and Isao Takahata, is a celebrated Japanese animation
-            studio known for its heartfelt stories and stunning hand-drawn worlds. With films like <i>My Neighbor Totoro</i>,
-            <i>Spirited Away</i>, and <i>Princess Mononoke</i>, the studio has become beloved worldwide for its imaginative settings,
-            memorable characters, and emotional depth—cementing its legacy as a cornerstone of animated cinema.
-          </p>
+      <div class="row">
+        <div class="h2 fw-bold mb-5 text-center display-4">
+          My Top 4 Favorite Ghibli Films
         </div>
-  
-        <div class="col-12 col-md-4 text-center">
-          <img 
-            src="assets/images/about-gif.gif" 
-            alt="About Studio Ghibli" 
-            class="img-fluid rounded shadow"
-            style="max-height: 260px; object-fit: cover;"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-  
 
-  <div class="container">
-    <div class="row">
-      <div class="h2 fw-bold mb-5 text-center display-4">My Top 4 Favorite Ghibli Films</div>
-
-      <div class="col-12 col-md-6 col-lg-3 my-3">
-        <div class="card shadow">
-          <img src="assets/images/pic-20.jpg" class="card-img w-100" />
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Whisper of the Heart</h5>
-            <p class="card-year">1995</p>
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <div class="card shadow">
+            <img src="assets/images/pic-20.jpg" class="card-img w-100" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Whisper of the Heart</h5>
+              <p class="card-year">1995</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-md-6 col-lg-3 my-3">
-        <div class="card shadow">
-          <img src="assets/images/pic-14.jpg" class="card-img w-100" />
-          <div class="card-body">
-            <h5 class="card-title fw-bold ">Spirited Away</h5>
-            <p class="card-year">2001</p>
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <div class="card shadow">
+            <img src="assets/images/pic-14.jpg" class="card-img w-100" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Spirited Away</h5>
+              <p class="card-year">2001</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-md-6 col-lg-3 my-3">
-        <div class="card shadow">
-          <img src="assets/images/pic-18.jpg" class="card-img w-100" />
-          <div class="card-body">
-            <h5 class="card-title fw-bold ">The Wind Rises</h5>
-            <p class="card-year">2013</p>
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <div class="card shadow">
+            <img src="assets/images/pic-18.jpg" class="card-img w-100" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">The Wind Rises</h5>
+              <p class="card-year">2013</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-md-6 col-lg-3 my-3">
-        <div class="card shadow">
-          <img src="assets/images/pic-5.jpg" class="card-img w-100" />
-          <div class="card-body">
-            <h5 class="card-title fw-bold ">Howl's Moving Castle</h5>
-            <p class="card-year">2004</p>
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <div class="card shadow">
+            <img src="assets/images/pic-5.jpg" class="card-img w-100" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Howl's Moving Castle</h5>
+              <p class="card-year">2004</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container my-5" id="Movies">
-    <div class="row" id="container-row">
-      <div class="h2 fw-bold text-center display-4">All Ghibli Films</div>
+    <div class="container my-5" id="Movies">
+      <div class="row" id="container-row">
+        <div class="h2 fw-bold text-center display-4">All Ghibli Films</div>
+      </div>
     </div>
 
+    <div class="ending-banner">
+      <img
+        src="assets/images/ending-picture.jpg"
+        alt="Ending Picture"
+        class="ending-picture"
+      />
+    </div>
 
     <script src="data.js"></script>
 
@@ -132,6 +151,5 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
