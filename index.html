@@ -26,7 +26,7 @@
       />
 
       <div
-        class="content position-absolute text-light d-flex flex-column align-items-start justify-content-center"
+        class="content position-absolute d-flex flex-column align-items-start justify-content-center"
       >
         <h1 class="fw-bold display-1 mb-4">Studio Ghibli Movies</h1>
 
@@ -119,6 +119,10 @@
     <div class="container my-5" id="Movies">
       <div class="row" id="container-row">
         <div class="h2 fw-bold text-center display-4">All Ghibli Films</div>
+        <p class="text-center fw-light mb-4 fs-5">
+          Explore every Studio Ghibli film, arranged alphabetically for easier
+          browsing.
+        </p>
       </div>
     </div>
 
@@ -136,17 +140,22 @@
       var containerflow = document.getElementById("container-row");
 
       for (var i = 0; i < data.length; i++) {
-        containerflow.innerHTML += `
-          <div class="col-12 col-md-6 col-lg-3 my-3">
-            <div class="card">
-              <img src="${data[i].picture}" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">${data[i].movieTitle}</h5>
-                <p class="card-text">${data[i].year}</p>
-              </div>
-            </div>
-          </div>
-        `;
+        containerflow.innerHTML +=
+          '<div class="col-12 col-md-6 col-lg-3 my-3">' +
+          '<div class="card">' +
+          '<img src="' +
+          data[i].picture +
+          '" class="card-img-top" />' +
+          '<div class="card-body">' +
+          '<h5 class="card-title fw-bold">' +
+          data[i].movieTitle +
+          "</h5>" +
+          '<p class="card-text">' +
+          data[i].year +
+          "</p>" +
+          "</div>" +
+          "</div>" +
+          "</div>";
       }
     </script>
 
