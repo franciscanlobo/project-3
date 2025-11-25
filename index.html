@@ -18,28 +18,22 @@
   </head>
 
   <body>
-    <div class="hero-section position-relative">
-      <img
-        src="assets/images/hero-picture.jpg"
-        alt="Hero Picture"
-        class="hero-picture"
-      />
-
-      <div
-        class="content position-absolute d-flex flex-column align-items-start justify-content-center"
-      >
-        <h1 class="fw-bold display-1 mb-4">Studio Ghibli Movies</h1>
-
-        <p class="mb-4 fs-5">
-          A curated collection of Studio Ghibli’s most magical worlds, from
+    <section
+      class="hero-section d-flex align-items-center justify-content-center text-center"
+    >
+      <div class="hero-content">
+        <h1 class="fw-bold display-1 mb-3">Studio Ghibli Movies</h1>
+        <p class="mb-4 fs-6">
+          A curated collection of Studio Ghibli's most magical worlds, from
           heartfelt adventures to timeless stories that shaped generations.
         </p>
-
-        <a href="#Movies" class="movies-btn px-5 py-2 mt-2"> See Movies </a>
+        <a href="#Movies" class="movies-btn btn btn-dark px-5 py-2 mt-2">
+          See Movies
+        </a>
       </div>
-    </div>
+    </section>
 
-    <div class="about py-5">
+    <section class="about-section py-5">
       <div class="container">
         <h2 class="fw-bold mb-5 text-center display-4">About Studio Ghibli</h2>
 
@@ -66,11 +60,15 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <div class="parallax">
+      <div class="container-fluid favorite"></div>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="h2 fw-bold mb-5 text-center display-4">
+        <div class="h2 fw-bold my-5 text-center display-4">
           My Top 4 Favorite Ghibli Films
         </div>
 
@@ -126,6 +124,77 @@
       </div>
     </div>
 
+    <div class="external">
+      <div class="h2 fw-bold text-center display-4">The Art of Ghibli</div>
+      <div class="horizontal-scroll-wrapper">
+        <div class="img-wrapper slower">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/images/gallery-1.jpg" alt="" />
+          </a>
+        </div>
+
+        <div class="img-wrapper faster">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/images/gallery-2.jpg" alt="" />
+          </a>
+        </div>
+
+        <div class="img-wrapper slower vertical">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/images/gallery-3.jpg" alt="" />
+          </a>
+        </div>
+
+        <div class="img-wrapper slower slower-down">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/images/gallery-4.jpg" alt="" />
+          </a>
+        </div>
+
+        <div class="img-wrapper">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/images/gallery-5.jpg" alt="" />
+          </a>
+        </div>
+
+        <div class="img-wrapper slower">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/images/gallery-6.jpg" alt="" />
+          </a>
+        </div>
+
+        <div class="img-wrapper faster1">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/images/gallery-7.jpg" alt="" />
+          </a>
+        </div>
+
+        <div class="img-wrapper slower slower2">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/images/gallery-8.jpg" alt="" />
+          </a>
+        </div>
+
+        <div class="img-wrapper">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/images/gallery-9.jpg" alt="" />
+          </a>
+        </div>
+
+        <div class="img-wrapper slower">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/images/gallery-10.jpg" alt="" />
+          </a>
+        </div>
+
+        <div class="img-wrapper slower last">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/images/gallery-11.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
     <div class="ending-banner">
       <img
         src="assets/images/ending-picture.jpg"
@@ -134,28 +203,41 @@
       />
     </div>
 
-    <script src="data.js"></script>
+    <script src="assets/js/data.js"></script>
 
     <script>
-      var containerflow = document.getElementById("container-row");
+      const containerflow = document.getElementById("container-row");
 
-      for (var i = 0; i < data.length; i++) {
+      for (let i = 0; i < data.length; i++) {
         containerflow.innerHTML +=
-          '<div class="col-12 col-md-6 col-lg-3 my-3">' +
-          '<div class="card">' +
-          '<img src="' +
+          `
+          <div class="col-12 col-md-6 col-lg-3 my-3">
+            <div class="card">
+                  <div class="img-container position-relative">
+                  <img src="` +
           data[i].picture +
-          '" class="card-img-top" />' +
-          '<div class="card-body">' +
-          '<h5 class="card-title fw-bold">' +
+          `" class="card-img-top" />
+                  <div class="synopsis-overlay d-flex justify-content-center align-items-center">
+                    <p class="overlay-text">
+                      ` +
+          data[i].synopsis +
+          `
+                    </p>
+                  </div>
+                </div>
+    
+              <div class="card-body">
+                <h5 class="card-title fw-bold">` +
           data[i].movieTitle +
-          "</h5>" +
-          '<p class="card-text">' +
+          `</h5>
+                <p class="card-text">` +
           data[i].year +
-          "</p>" +
-          "</div>" +
-          "</div>" +
-          "</div>";
+          `</p>
+              </div>
+    
+            </div>
+          </div>
+        `;
       }
     </script>
 
