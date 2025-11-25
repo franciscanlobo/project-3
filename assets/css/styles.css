@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: #000;
   color: white;
+  overflow-x: hidden;
 }
 
 /* ======================= */
@@ -21,7 +22,6 @@ body {
   background-attachment: fixed;
 }
 
-/* Fade/mist overlay */
 .hero-section::after {
   content: "";
   position: absolute;
@@ -109,7 +109,6 @@ body {
   width: 100%;
   position: relative;
 
-  /* This is the real parallax */
   background-image: url("../images/body-picture.jpg");
   background-size: cover;
   background-position: center;
@@ -126,6 +125,23 @@ body {
   /* background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%); */
 }
 
+/* SKIES ABOVE */
+.side-sky {
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 5;
+}
+
+#skyLeft {
+  left: -10%;
+}
+
+#skyRight {
+  right: -10%;
+}
+
+/* MOVIE CARDS */
 .card {
   background-color: #000000;
   color: white;
@@ -295,6 +311,17 @@ p {
 .icon svg {
   width: 50px;
   fill: currentcolor;
+}
+
+/* Ending Quote */
+.quote-line {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.author {
+  font-size: 1.1rem;
 }
 
 /* Ending Banner Styles */

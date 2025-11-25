@@ -31,6 +31,21 @@
           See Movies
         </a>
       </div>
+
+      <!-- Floating Skies -->
+      <img
+        src="assets/images/ghibli-sky 1.png"
+        id="skyLeft"
+        class="side-sky"
+        alt="Sky Left"
+      />
+
+      <img
+        src="assets/images/ghibli-sky 2.png"
+        id="skyRight"
+        class="side-sky"
+        alt="Sky Right"
+      />
     </section>
 
     <section class="about-section py-5">
@@ -195,6 +210,16 @@
       </div>
     </div>
 
+    <section class="closing-quote py-5 my-3">
+      <div class="container text-center">
+        <h2 class="quote-line mb-3">
+          "Always believe in yourself. Do this and no matter where you are, you
+          will have nothing to fear."
+        </h2>
+        <p class="author fst-italic">- Hayao Miyazaki</p>
+      </div>
+    </section>
+
     <div class="ending-banner">
       <img
         src="assets/images/ending-picture.jpg"
@@ -239,6 +264,20 @@
           </div>
         `;
       }
+    </script>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        let scrollPos = window.scrollY;
+
+        document.getElementById("skyLeft").style.transform = `translateX(${
+          scrollPos * -0.3
+        }px)`;
+
+        document.getElementById("skyRight").style.transform = `translateX(${
+          scrollPos * 0.3
+        }px)`;
+      });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
