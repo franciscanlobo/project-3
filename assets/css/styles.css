@@ -20,6 +20,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .hero-section::after {
@@ -87,8 +88,6 @@ body {
 .parallax {
   background-image: url("../images/hero-picture.jpg");
   min-height: 500px;
-
-  /* real parallax */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -121,16 +120,15 @@ body {
   position: absolute;
   inset: 0;
   pointer-events: none;
-
-  /* background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%); */
 }
 
-/* SKIES ABOVE */
+/* Clouds */
 .side-sky {
   position: absolute;
   width: auto;
   height: auto;
   z-index: 3;
+  pointer-events: none;
 }
 
 #skyLeft {
@@ -183,7 +181,6 @@ body {
 }
 
 /* Parallax Gallery */
-/* hide scrollbar */
 ::-webkit-scrollbar {
   width: 1px;
   height: 0.5px;
@@ -325,7 +322,6 @@ p {
 }
 
 /* Ending Banner Styles */
-
 .ending-banner {
   height: 80vh;
   width: 100%;
